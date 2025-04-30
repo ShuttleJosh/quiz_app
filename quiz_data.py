@@ -10,17 +10,17 @@ quiz = [
     {
         "question": "Pick a vibe for the day",
         "options": [
-            {"image": "images/movie.jpg", "tag": "cozy"},
-            {"image": "images/date.jpg", "tag": "romantic"},
-            {"image": "images/hike.jpg", "tag": "adventure"}
+            {"image": "images/movie.JPG", "tag": "cozy"},
+            {"image": "images/date.JPG", "tag": "romantic"},
+            {"image": "images/hike.JPG", "tag": "adventure"}
         ]
     },
     {
         "question": "How do you want to feel?",
         "options": [
-            {"image": "images/wedding.jpg", "tag": "romantic"},
-            {"image": "images/camping.jpg", "tag": "adventure"},
-            {"image": "images/bed.jpg", "tag": "cozy"}
+            {"image": "images/wedding.JPG", "tag": "romantic"},
+            {"image": "images/camping.JPG", "tag": "adventure"},
+            {"image": "images/bed.JPG", "tag": "cozy"}
         ]
     }
 ]
