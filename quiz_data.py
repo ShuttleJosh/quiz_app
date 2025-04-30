@@ -2,7 +2,7 @@ quiz = [
     {
         "question": "Which us do you feel like today?",
         "options": [
-            {"image": "images/vacation.jpg", "tag": "vacation"},
+            {"image": "images/vacation", "tag": "vacation"},
             {"image": "images/cozy.jpg", "tag": "cozy"},
             {"image": "images/romantic.jpg", "tag": "romantic"}
         ]
