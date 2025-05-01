@@ -12,7 +12,7 @@ quiz = [
         "options": [
             {"image": "images/Breakfast.jpg", "tag": "Wine"},
             {"image": "images/Lunch_Buffet.JPG", "tag": "Wine"},
-            {"image": "images/Dinner_Buffet.JPG", "tag": "Wine"}
+            {"image": "images/Dinner_Buffet.JPG", "tag": "Wine"},
             {"image": "images/Fancy_Food.JPG", "tag": "Wine"}
         ]
     },
@@ -21,9 +21,9 @@ quiz = [
         "options": [
             {"image": "images/Wine.JPG", "tag": "Wine"},
             {"image": "images/Cocktail.JPEG", "tag": "Wine"},
-            {"image": "images/Beer.JPEG", "tag": "Wine"}
-            {"image": "images/Coconut.JPEG", "tag": "Wine"}
-            {"image": "images/Coffee.JPEG", "tag": "Wine"}
+            {"image": "images/Beer.JPEG", "tag": "Wine"},
+            {"image": "images/Coconut.JPEG", "tag": "Wine"},
+            {"image": "images/Coffee.JPEG", "tag": "Wine"},
             {"image": "images/Iced_Coffee.jpg", "tag": "Wine"}
         ]
     },
@@ -32,7 +32,7 @@ quiz = [
         "options": [
             {"image": "images/HotTub.JPG", "tag": "Wine"},
             {"image": "images/Hiking.JPG", "tag": "Wine"},
-            {"image": "images/Exploring.JPG", "tag": "Wine"}
+            {"image": "images/Exploring.JPG", "tag": "Wine"},
             {"image": "images/Festival.JPEG", "tag": "Wine"}
         ]
     },
@@ -41,7 +41,7 @@ quiz = [
         "options": [
             {"image": "images/Brussels.JPEG", "tag": "Wine"},
             {"image": "images/Budapest.JPEG", "tag": "Wine"},
-            {"image": "images/Corfu.JPEG", "tag": "Wine"}
+            {"image": "images/Corfu.JPEG", "tag": "Wine"},
             {"image": "images/Venice.JPEG", "tag": "Wine"}
         ]
     },
