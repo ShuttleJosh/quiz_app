@@ -23,7 +23,7 @@ if st.session_state.step < len(quiz):
     for i, option in enumerate(q["options"]):
         with cols[i]:
             st.image(option["image"], use_container_width=True)
-            filename = os.path.basename(option["image"])
+            filename = os.path.splitext(os.path.basename(option["image"]))[0]
             if st.button(filename, key=f"option_{i}_{st.session_state.step}"):
                 st.session_state.answers.append(option["tag"])
                 st.session_state.step += 1
