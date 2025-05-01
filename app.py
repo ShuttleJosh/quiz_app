@@ -1,9 +1,6 @@
 import streamlit as st
 from quiz_data import quiz, results
 from collections import Counter
-import os
-
-filename = os.path.basename(option["image"])
 
 st.set_page_config(page_title="Which Ece Are You Today?", layout="wide")
 
@@ -20,13 +17,16 @@ if st.session_state.step < len(quiz):
 
     cols = st.columns(len(q["options"]))
 
-    for i, option in enumerate(q["options"]):
-        with cols[i]:
-            st.image(option["image"], use_container_width=True)
-            if st.button(filename, key=f"option_{i}_{st.session_state.step}"):
-                st.session_state.answers.append(option["tag"])
-                st.session_state.step += 1
-                st.rerun()
+    import os
+
+for i, option in enumerate(q["options"]):
+    with cols[i]:
+        st.image(option["image"], use_container_width=True)
+        filename = os.path.basename(option["image"])
+        if st.button(filename, key=f"option_{i}_{st.session_state.step}"):
+            st.session_state.answers.append(option["tag"])
+            st.session_state.step += 1
+            st.rerun()
 else:
     st.subheader("Your result is...")
 
