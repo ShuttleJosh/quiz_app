@@ -24,7 +24,7 @@ quiz = [
             {"image": "images/Beer.JPG", "tag": "Wine"},
             {"image": "images/Coconut.JPEG", "tag": "Wine"},
             {"image": "images/Coffee.JPEG", "tag": "Wine"},
-            {"image": "images/Iced_Coffee.jpg", "tag": "Wine"}
+            {"image": "images/Iced Coffee.jpg", "tag": "Wine"}
         ]
     },
     {
