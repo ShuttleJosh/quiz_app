@@ -4,13 +4,13 @@ from quiz_data import quiz, results
 from collections import Counter
 import os
 
+# Function to correct image rotation based on EXIF data
 def correct_image_rotation(image_path):
-    """Correct the image rotation based on EXIF data."""
     try:
         img = Image.open(image_path)
         # Check if the image has EXIF data (e.g., orientation)
         for orientation_tag in ExifTags.TAGS.keys():
-            if ExifTags.TAGS[orientation_tag]=='Orientation':
+            if ExifTags.TAGS[orientation_tag] == 'Orientation':
                 break
         
         # Get EXIF data and rotate the image accordingly
@@ -27,6 +27,19 @@ def correct_image_rotation(image_path):
     except (AttributeError, KeyError, IndexError):
         # If no EXIF data, return the image as is
         return Image.open(image_path)
+
+# Function to resize/crop/pad images to a standard size
+def resize_image(image, target_size=(300, 300)):
+    """Resize, crop or pad images to a standard size"""
+    # Resize image maintaining aspect ratio
+    img = image.copy()
+    img.thumbnail(target_size, Image.ANTIALIAS)  # Resize with aspect ratio
+    
+    # Create a new image with white background to pad if needed
+    new_image = Image.new("RGB", target_size, (255, 255, 255))  # White background
+    new_image.paste(img, ((target_size[0] - img.width) // 2, (target_size[1] - img.height) // 2))
+
+    return new_image
 
 st.set_page_config(page_title="Which Ece Are You Today?", layout="wide")
 
@@ -45,9 +58,10 @@ if st.session_state.step < len(quiz):
 
     for i, option in enumerate(q["options"]):
         with cols[i]:
-            # Correct rotation for each image before displaying it
+            # Correct image rotation and then resize/crop/pad
             corrected_image = correct_image_rotation(option["image"])
-            st.image(corrected_image, use_container_width=True)
+            resized_image = resize_image(corrected_image, target_size=(300, 300))  # Resize to 300x300 pixels
+            st.image(resized_image, use_container_width=True)
             
             filename = os.path.splitext(os.path.basename(option["image"]))[0]
             if st.button(filename, key=f"option_{i}_{st.session_state.step}"):
