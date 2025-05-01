@@ -74,7 +74,9 @@ else:
     if st.session_state.answers:
         most_common = Counter(st.session_state.answers).most_common(1)[0][0]
         st.markdown(f"### 🎉 {results[most_common]}")
-        st.image(correct_image_rotation(option[f"images/{most_common}.jpg"]), use_container_width=True)
+        result_image_path = f"images/{most_common}.JPG"
+        corrected_result_image = correct_image_rotation(result_image_path)
+        st.image(corrected_result_image, use_container_width=True)
     else:
         st.warning("No answers recorded. Please restart the quiz.")
 
