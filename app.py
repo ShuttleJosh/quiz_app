@@ -74,7 +74,7 @@ else:
     if st.session_state.answers:
         most_common = Counter(st.session_state.answers).most_common(1)[0][0]
         st.markdown(f"### 🎉 {results[most_common]}")
-        result_image_path = f"images/{most_common}.JPG"
+        result_image_path = f"images/{most_common}.jpg"
         corrected_result_image = correct_image_rotation(result_image_path)
         st.image(corrected_result_image, use_container_width=True)
     else:
