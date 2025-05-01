@@ -33,7 +33,7 @@ def resize_image(image, target_size=(300, 300)):
     """Resize, crop or pad images to a standard size"""
     # Resize image maintaining aspect ratio
     img = image.copy()
-    img.thumbnail(target_size, Image.ANTIALIAS)  # Resize with aspect ratio
+    img.thumbnail(target_size, Image.Resampling.LANCZOS)  # Resize with aspect ratio
     
     # Create a new image with white background to pad if needed
     new_image = Image.new("RGB", target_size, (255, 255, 255))  # White background
