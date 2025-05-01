@@ -4,13 +4,13 @@ quiz = [
         "options": [
             {"image": "images/New_Year.JPG", "tag": "Happy"},
             {"image": "images/Christmas.JPG", "tag": "Adventure"},
-            {"image": "images/Halloween.JPG", "tag": "Crazy"}
+            {"image": "images/A holiday awayyyyyy.JPG", "tag": "Crazy"}
         ]
     },
     {
         "question": "Pick the food you're dying for",
         "options": [
-            {"image": "images/Breakfast.jpg", "tag": "Crazy"},
+            {"image": "images/PIZZAAA.JPEG", "tag": "Crazy"},
             {"image": "images/Lunch_Buffet.JPG", "tag": "Adventure"},
             {"image": "images/Dinner_Buffet.JPG", "tag": "Crazy"},
             {"image": "images/Fancy_Food.JPG", "tag": "Happy"}
@@ -23,7 +23,7 @@ quiz = [
             {"image": "images/Cocktail.JPEG", "tag": "Crazy"},
             {"image": "images/Beer.JPG", "tag": "Happy"},
             {"image": "images/Coffee.JPEG", "tag": "Adventure"},
-            {"image": "images/Iced Coffee.jpg", "tag": "Adventure"}
+            {"image": "images/Iced Coffee.JPEG", "tag": "Adventure"}
         ]
     },
     {
