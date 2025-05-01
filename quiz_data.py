@@ -4,13 +4,13 @@ quiz = [
         "options": [
             {"image": "images/New_Year.JPG", "tag": "Happy"},
             {"image": "images/Christmas.JPG", "tag": "Adventure"},
-            {"image": "images/Halloween.JPG", "tag": "Crazy"}
+            {"image": "images/A holiday awayyyyyy.JPG", "tag": "Crazy"}
         ]
     },
     {
         "question": "Pick the food you're dying for",
         "options": [
-            {"image": "images/Breakfast.jpg", "tag": "Crazy"},
+            {"image": "images/PIZZAAA.JPEG", "tag": "Crazy"},
             {"image": "images/Lunch_Buffet.JPG", "tag": "Adventure"},
             {"image": "images/Dinner_Buffet.JPG", "tag": "Crazy"},
             {"image": "images/Fancy_Food.JPG", "tag": "Happy"}
@@ -22,9 +22,8 @@ quiz = [
             {"image": "images/Wine.JPG", "tag": "Happy"},
             {"image": "images/Cocktail.JPEG", "tag": "Crazy"},
             {"image": "images/Beer.JPG", "tag": "Happy"},
-            {"image": "images/Coconut.JPEG", "tag": "Crazy"},
             {"image": "images/Coffee.JPEG", "tag": "Adventure"},
-            {"image": "images/Iced Coffee.jpg", "tag": "Adventure"}
+            {"image": "images/Iced Coffee.JPEG", "tag": "Adventure"}
         ]
     },
     {
@@ -56,9 +55,9 @@ quiz = [
     {
         "question": "You just got fired ): What careers next?",
         "options": [
-            {"image": "images/Racing.JPG", "tag": "Crazy"},
+            {"image": "images/Professional Racist.JPG", "tag": "Crazy"},
             {"image": "images/Basketball.JPEG", "tag": "Adventure"},
-            {"image": "images/Fight.JPEG", "tag": "Happy"}
+            {"image": "images/Boxer.JPEG", "tag": "Happy"}
         ]
     },
     {
@@ -82,5 +81,5 @@ quiz = [
 results = {
     "Happy": "You got happy Ece! You are a ray of sunshine ☀️",
     "Crazy": "You got crazy Ece! You are gremlin 🍿",
-    "Adventure": "You got Adventure Ece! Just another day in the life 💕",
+    "Adventure": "You got Adventure Ece! Go explore the world 💕",
 }
