@@ -36,7 +36,7 @@ def resize_image(image, target_size=(300, 300)):
     img.thumbnail(target_size, Image.Resampling.LANCZOS)  # Resize with aspect ratio
     
     # Create a new image with white background to pad if needed
-    new_image = Image.new("RGB", target_size, (255, 255, 255))  # White background
+    new_image = Image.new("RGB", target_size, (0, 0, 0))  # Black background
     new_image.paste(img, ((target_size[0] - img.width) // 2, (target_size[1] - img.height) // 2))
 
     return new_image
