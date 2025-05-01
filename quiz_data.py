@@ -21,7 +21,7 @@ quiz = [
         "options": [
             {"image": "images/Wine.JPG", "tag": "Wine"},
             {"image": "images/Cocktail.JPEG", "tag": "Wine"},
-            {"image": "images/Beer.JPEG", "tag": "Wine"},
+            {"image": "images/Beer.JPG", "tag": "Wine"},
             {"image": "images/Coconut.JPEG", "tag": "Wine"},
             {"image": "images/Coffee.JPEG", "tag": "Wine"},
             {"image": "images/Iced_Coffee.jpg", "tag": "Wine"}
