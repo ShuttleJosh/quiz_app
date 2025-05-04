@@ -44,8 +44,6 @@ def resize_image(image, target_size=(300, 300)):
 st.set_page_config(page_title="Which Ece Are You Today?", layout="wide")
 
 # Background music (looped, low volume)
-import streamlit as st
-
 background_music_path = "music/background.mp3"
 
 # Read the file as bytes
