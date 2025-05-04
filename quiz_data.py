@@ -65,7 +65,7 @@ quiz = [
         "options": [
             {"image": "images/Meme 1.JPEG", "tag": "Adventure"},
             {"image": "images/Meme 2.JPEG", "tag": "Happy"},
-            {"image": "images/Meme 3.JPG", "tag": "Crazy"}
+            {"image": "images/Meme 3.PNG", "tag": "Crazy"}
         ]
     },
     {
