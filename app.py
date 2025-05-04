@@ -44,17 +44,16 @@ def resize_image(image, target_size=(300, 300)):
 st.set_page_config(page_title="Which Ece Are You Today?", layout="wide")
 
 # Background music (looped, low volume)
+import streamlit as st
+
 background_music_path = "music/background.mp3"
-if st.button("🔊 Play Background Music"):
-    st.markdown(
-        f"""
-        <audio autoplay loop>
-            <source src="{background_music_path}" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        """,
-        unsafe_allow_html=True
-    )
+
+# Read the file as bytes
+try:
+    with open(background_music_path, "rb") as audio_file:
+        st.audio(audio_file.read(), format="audio/mp3", start_time=0)
+except FileNotFoundError:
+    st.error("Background music file not found. Please check the path.")
 
 if "step" not in st.session_state:
     st.session_state.step = 0
