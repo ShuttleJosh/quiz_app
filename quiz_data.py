@@ -80,5 +80,5 @@ quiz = [
 results = {
     "Happy": "You got happy Ece! You are a ray of sunshine ☀️",
     "Crazy": "You got crazy Ece! You are gremlin 🍿",
-    "Adventure": "You got Adventure Ece! Go explore the world 💕",
+    "Adventure": "You got adventure Ece! Go explore the world 💕",
 }
