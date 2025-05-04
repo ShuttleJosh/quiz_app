@@ -1,4 +1,4 @@
-jquiz = [
+quiz = [
     {
         "question": "Pick the event you most relate to",
         "options": [
