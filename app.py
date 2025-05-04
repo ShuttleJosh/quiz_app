@@ -44,6 +44,7 @@ def resize_image(image, target_size=(300, 300)):
 st.set_page_config(page_title="Which Ece Are You Today?", layout="wide")
 
 # Background music (looped, low volume)
+background_music_path = "music/background.mp3"
 if st.button("🔊 Play Background Music"):
     st.markdown(
         f"""
