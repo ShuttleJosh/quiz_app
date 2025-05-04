@@ -44,16 +44,16 @@ def resize_image(image, target_size=(300, 300)):
 st.set_page_config(page_title="Which Ece Are You Today?", layout="wide")
 
 # Background music (looped, low volume)
-background_music_path = "music/background.mp3"
-st.markdown(
-    f"""
-    <audio autoplay loop>
-        <source src="{background_music_path}" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    """,
-    unsafe_allow_html=True
-)
+if st.button("🔊 Play Background Music"):
+    st.markdown(
+        f"""
+        <audio autoplay loop>
+            <source src="{background_music_path}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        """,
+        unsafe_allow_html=True
+    )
 
 if "step" not in st.session_state:
     st.session_state.step = 0
