@@ -81,26 +81,25 @@ if st.session_state.step < len(quiz):
 else:
     st.subheader("Your result is...")
 
-    if st.session_state.answers:
-        most_common = Counter(st.session_state.answers).most_common(1)[0][0]
-        st.markdown(f"### 🎉 {results[most_common]}")
-        result_image_path = f"images/{most_common}.JPEG"
-        corrected_result_image = correct_image_rotation(result_image_path)
-        st.image(corrected_result_image, use_container_width=True)
+if st.session_state.answers:
+    most_common = Counter(st.session_state.answers).most_common(1)[0][0]
+    st.markdown(f"### 🎉 {results[most_common]}")
+    
+    result_image_path = f"images/{most_common}.JPEG"
+    corrected_result_image = correct_image_rotation(result_image_path)
+    st.image(corrected_result_image, use_container_width=True)
 
-        # Play result-specific music
-        result_music_path = f"music/{most_common}.mp3"  # Make sure these files exist
-        st.markdown(
-            f"""
-            <audio autoplay>
-                <source src="{result_music_path}" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            """,
-            unsafe_allow_html=True
-        )
-    else:
-        st.warning("No answers recorded. Please restart the quiz.")
+    # Play result-specific music with readable label
+    result_music_path = f"music/{most_common}.mp3"
+    st.markdown("#### 🎵 Click below to hear your winning theme song")
+
+    try:
+        with open(result_music_path, "rb") as audio_file:
+            st.audio(audio_file.read(), format="audio/mp3", start_time=0)
+    except FileNotFoundError:
+        st.error("Music file not found for this result. Please check the path.")
+else:
+    st.warning("No answers recorded. Please restart the quiz.")
 
     if st.button("Play again"):
         st.session_state.step = 0
