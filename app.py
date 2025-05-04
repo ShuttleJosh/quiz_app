@@ -101,7 +101,17 @@ if st.session_state.answers:
 else:
     st.warning("No answers recorded. Please restart the quiz.")
 
-    if st.button("Play again"):
-        st.session_state.step = 0
-        st.session_state.answers = []
-        st.rerun()
+# This will reset everything, including the music, when clicked
+if st.button("Play again"):
+    st.session_state.step = 0
+    st.session_state.answers = []
+    
+    # Reset the background music (looped)
+    background_music_path = "music/background.mp3"
+    try:
+        with open(background_music_path, "rb") as audio_file:
+            st.audio(audio_file.read(), format="audio/mp3", start_time=0)
+    except FileNotFoundError:
+        st.error("Background music file not found. Please check the path.")
+    
+    st.rerun()
