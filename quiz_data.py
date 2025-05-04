@@ -1,4 +1,4 @@
-quiz = [
+jquiz = [
     {
         "question": "Pick the event you most relate to",
         "options": [
@@ -8,7 +8,7 @@ quiz = [
         ]
     },
     {
-        "question": "Pick the food you're dying for",
+        "question": "Pick the food that pulls you in",
         "options": [
             {"image": "images/Lunch Buffet.JPG", "tag": "Adventure"},
             {"image": "images/Dinner Buffet.JPG", "tag": "Crazy"},
@@ -26,7 +26,7 @@ quiz = [
         ]
     },
     {
-        "question": "Time to relax, wyd?",
+        "question": "Time to enjoy some time off, wyd?",
         "options": [
             {"image": "images/HotTub.JPG", "tag": "Adventure"},
             {"image": "images/Hiking.JPG", "tag": "Happy"},
@@ -52,7 +52,7 @@ quiz = [
         ]
     },
     {
-        "question": "You just got fired ): What careers next?",
+        "question": "You just got fired ): What career is next?",
         "options": [
             {"image": "images/Professional Racist.JPG", "tag": "Crazy"},
             {"image": "images/Basketball.JPEG", "tag": "Adventure"},
@@ -68,7 +68,7 @@ quiz = [
         ]
     },
     {
-        "question": "Sleep ",
+        "question": "Sleepy who?",
         "options": [
             {"image": "images/Sleepy Ece.JPEG", "tag": "Happy"},
             {"image": "images/Sleepy Wedge.JPEG", "tag": "Crazy"},
