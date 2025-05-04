@@ -8,12 +8,12 @@ quiz = [
         ]
     },
     {
-        "question": "Pick the food you're dying for",
+        "question": "Pick the food that pulls you in",
         "options": [
-            {"image": "images/PIZZAAA.JPEG", "tag": "Crazy"},
             {"image": "images/Lunch Buffet.JPG", "tag": "Adventure"},
             {"image": "images/Dinner Buffet.JPG", "tag": "Crazy"},
-            {"image": "images/Fancy Food.JPG", "tag": "Happy"}
+            {"image": "images/Fancy Food.JPG", "tag": "Happy"},
+            {"image": "images/PIZZAAA.JPEG", "tag": "Crazy"}
         ]
     },
     {
@@ -23,11 +23,10 @@ quiz = [
             {"image": "images/Cocktail.JPEG", "tag": "Crazy"},
             {"image": "images/Beer.JPG", "tag": "Happy"},
             {"image": "images/Coffee.JPEG", "tag": "Adventure"},
-            {"image": "images/Iced Coffee.JPEG", "tag": "Adventure"}
         ]
     },
     {
-        "question": "Time to relax, wyd?",
+        "question": "Time to enjoy some time off, wyd?",
         "options": [
             {"image": "images/HotTub.JPG", "tag": "Adventure"},
             {"image": "images/Hiking.JPG", "tag": "Happy"},
@@ -53,7 +52,7 @@ quiz = [
         ]
     },
     {
-        "question": "You just got fired ): What careers next?",
+        "question": "You just got fired ): What career is next?",
         "options": [
             {"image": "images/Professional Racist.JPG", "tag": "Crazy"},
             {"image": "images/Basketball.JPEG", "tag": "Adventure"},
@@ -69,7 +68,7 @@ quiz = [
         ]
     },
     {
-        "question": "Sleep ",
+        "question": "Sleepy who?",
         "options": [
             {"image": "images/Sleepy Ece.JPEG", "tag": "Happy"},
             {"image": "images/Sleepy Wedge.JPEG", "tag": "Crazy"},
@@ -81,5 +80,5 @@ quiz = [
 results = {
     "Happy": "You got happy Ece! You are a ray of sunshine ☀️",
     "Crazy": "You got crazy Ece! You are gremlin 🍿",
-    "Adventure": "You got Adventure Ece! Go explore the world 💕",
+    "Adventure": "You got adventure Ece! Go explore the world 💕",
 }

@@ -43,6 +43,18 @@ def resize_image(image, target_size=(300, 300)):
 
 st.set_page_config(page_title="Which Ece Are You Today?", layout="wide")
 
+# Background music (looped, low volume)
+background_music_path = "music/background.mp3"
+st.markdown(
+    f"""
+    <audio autoplay loop>
+        <source src="{background_music_path}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    """,
+    unsafe_allow_html=True
+)
+
 if "step" not in st.session_state:
     st.session_state.step = 0
     st.session_state.answers = []
@@ -77,6 +89,18 @@ else:
         result_image_path = f"images/{most_common}.JPEG"
         corrected_result_image = correct_image_rotation(result_image_path)
         st.image(corrected_result_image, use_container_width=True)
+
+        # Play result-specific music
+        result_music_path = f"music/{most_common}.mp3"  # Make sure these files exist
+        st.markdown(
+            f"""
+            <audio autoplay>
+                <source src="{result_music_path}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            """,
+            unsafe_allow_html=True
+        )
     else:
         st.warning("No answers recorded. Please restart the quiz.")
 
