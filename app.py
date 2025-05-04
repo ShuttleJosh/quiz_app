@@ -46,12 +46,18 @@ st.set_page_config(page_title="Which Ece Are You Today?", layout="wide")
 # Background music (looped, low volume)
 background_music_path = "music/background.mp3"
 
-if st.button("🎵 Click here for annoying background music"):
-    try:
-        with open(background_music_path, "rb") as audio_file:
-            st.audio(audio_file.read(), format="audio/mp3", start_time=0)
-    except FileNotFoundError:
-        st.error("Music file not found. Please check the path.")
+# Check if background music has already been played, if not, play it
+if "background_music_played" not in st.session_state:
+    st.session_state.background_music_played = False
+
+if not st.session_state.background_music_played:
+    if st.button("🎵 Click here for annoying background music"):
+        try:
+            with open(background_music_path, "rb") as audio_file:
+                st.audio(audio_file.read(), format="audio/mp3", start_time=0)
+                st.session_state.background_music_played = True  # Mark background music as played
+        except FileNotFoundError:
+            st.error("Music file not found. Please check the path.")
 
 if "step" not in st.session_state:
     st.session_state.step = 0
@@ -107,11 +113,5 @@ else:
         st.session_state.answers = []
         
         # Reset the background music (looped)
-        background_music_path = "music/background.mp3"
-        try:
-            with open(background_music_path, "rb") as audio_file:
-                st.audio(audio_file.read(), format="audio/mp3", start_time=0)
-        except FileNotFoundError:
-            st.error("Background music file not found. Please check the path.")
-        
+        st.session_state.background_music_played = False
         st.rerun()
