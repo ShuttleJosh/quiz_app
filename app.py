@@ -83,7 +83,7 @@ if st.session_state.step < len(quiz):
 else:
     st.subheader("Your result is...")
 
-if st.session_state.answers:
+    if st.session_state.answers:
         most_common = Counter(st.session_state.answers).most_common(1)[0][0]
         st.markdown(f"### 🎉 {results[most_common]}")
         result_image_path = f"images/{most_common}.JPEG"
