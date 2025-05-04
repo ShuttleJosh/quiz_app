@@ -2,7 +2,7 @@ quiz = [
     {
         "question": "Pick the event you most relate to",
         "options": [
-            {"image": "images/New_Year.JPG", "tag": "Happy"},
+            {"image": "images/New Year.JPG", "tag": "Happy"},
             {"image": "images/Christmas.JPG", "tag": "Adventure"},
             {"image": "images/A holiday awayyyyyy.JPG", "tag": "Crazy"}
         ]
@@ -11,9 +11,9 @@ quiz = [
         "question": "Pick the food you're dying for",
         "options": [
             {"image": "images/PIZZAAA.JPEG", "tag": "Crazy"},
-            {"image": "images/Lunch_Buffet.JPG", "tag": "Adventure"},
-            {"image": "images/Dinner_Buffet.JPG", "tag": "Crazy"},
-            {"image": "images/Fancy_Food.JPG", "tag": "Happy"}
+            {"image": "images/Lunch Buffet.JPG", "tag": "Adventure"},
+            {"image": "images/Dinner Buffet.JPG", "tag": "Crazy"},
+            {"image": "images/Fancy Food.JPG", "tag": "Happy"}
         ]
     },
     {
@@ -47,9 +47,9 @@ quiz = [
     {
         "question": "NIGHTMARE NIGHTMARE NIGHTMARE",
         "options": [
-            {"image": "images/Demon1.JPG", "tag": "Adventure"},
-            {"image": "images/Demon2.JPG", "tag": "Crazy"},
-            {"image": "images/Demon3.JPG", "tag": "Happy"}
+            {"image": "images/Demon 1.JPG", "tag": "Adventure"},
+            {"image": "images/Demon 2.JPG", "tag": "Crazy"},
+            {"image": "images/Demon 3.JPG", "tag": "Happy"}
         ]
     },
     {
@@ -63,17 +63,17 @@ quiz = [
     {
         "question": "Meme review",
         "options": [
-            {"image": "images/Meme1.JPEG", "tag": "Adventure"},
-            {"image": "images/Meme2.JPEG", "tag": "Happy"},
-            {"image": "images/Meme3.JPG", "tag": "Crazy"}
+            {"image": "images/Meme 1.JPEG", "tag": "Adventure"},
+            {"image": "images/Meme 2.JPEG", "tag": "Happy"},
+            {"image": "images/Meme 3.JPG", "tag": "Crazy"}
         ]
     },
     {
         "question": "Sleep ",
         "options": [
-            {"image": "images/Sleep1.JPEG", "tag": "Happy"},
-            {"image": "images/Sleep2.JPEG", "tag": "Crazy"},
-            {"image": "images/Sleep3.JPG", "tag": "Adventure"}
+            {"image": "images/Sleepy Ece.JPEG", "tag": "Happy"},
+            {"image": "images/Sleep Wedge.JPEG", "tag": "Crazy"},
+            {"image": "images/Sleep Weepy.JPG", "tag": "Adventure"}
         ]
     }
 ]
