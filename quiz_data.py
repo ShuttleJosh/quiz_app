@@ -73,7 +73,7 @@ quiz = [
         "options": [
             {"image": "images/Sleepy Ece.JPEG", "tag": "Happy"},
             {"image": "images/Sleepy Wedge.JPEG", "tag": "Crazy"},
-            {"image": "images/Sleepy Weepy.JPG", "tag": "Adventure"}
+            {"image": "images/Sleepy Weepy.JPEG", "tag": "Adventure"}
         ]
     }
 ]
