@@ -10,10 +10,10 @@ quiz = [
     {
         "question": "Pick the food you're dying for",
         "options": [
-            {"image": "images/PIZZAAA.JPEG", "tag": "Crazy"},
             {"image": "images/Lunch Buffet.JPG", "tag": "Adventure"},
             {"image": "images/Dinner Buffet.JPG", "tag": "Crazy"},
-            {"image": "images/Fancy Food.JPG", "tag": "Happy"}
+            {"image": "images/Fancy Food.JPG", "tag": "Happy"},
+            {"image": "images/PIZZAAA.JPEG", "tag": "Crazy"}
         ]
     },
     {
